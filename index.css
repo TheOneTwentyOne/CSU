@@ -206,7 +206,7 @@ ul.sub li a:hover {
 }
 
 .value-cards-container .value-card .face {
-    width: 30vw;
+    width: 70vw;
     height: 200px;
     transition: .4s;
 }
