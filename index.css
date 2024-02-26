@@ -307,7 +307,7 @@ ul.sub li a:hover {
 /* ################################# */
 
 footer {
-    background-color: #000000;
+    background-color: #ffffff;
     color: white;
     padding: 20px;
     display: flex;
@@ -378,4 +378,9 @@ a.button-link {
 
 a.button-link:hover {
     color: #aa00e8; /* Set your desired hover text color */
+}
+
+
+@media screen and (max-width: 768px) {
+    
 }
