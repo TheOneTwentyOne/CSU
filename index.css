@@ -382,3 +382,7 @@ a.button-link:hover {
 
 
 @media screen and (max-width: 768px) {
+    .footer-main{
+        height: 80%;
+    }
+}
