@@ -16,6 +16,8 @@
 /*          Navbar Section           */
 /* ################################# */
 
+
+
 ul {
     list-style: none;
     padding: 0;
@@ -63,6 +65,7 @@ li {
     font-size: 15px;
     margin: 20px;
 }
+
 
 ul:after {
     clear: both;
@@ -148,7 +151,8 @@ ul.sub li a:hover {
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw; /* Set width to 100% of the viewport width */
+    max-width: 100%; /* Ensure it doesn't exceed 100% of the viewport width */
     height: 600px;
     z-index: 2; /* Set the z-index of the overlay to be higher */
     background: linear-gradient(rgba(206, 99, 255, 0.7), rgba(0, 0, 0, 0.5)), url(img/backgrounds/banner-5.png);
@@ -178,13 +182,14 @@ ul.sub li a:hover {
 
 
 
+
 /* ################################# */
 /*        Value Cards Section        */
 /* ################################# */
 
 
 .value-cards-container {
-    width: 100%; 
+    width: 95vw; 
     max-width: 1000px; 
     margin: 0 auto; 
     display: flex;
@@ -197,12 +202,11 @@ ul.sub li a:hover {
 
 .value-cards-container .value-card{
     position: relative;
-    width: calc(30% - 20px); /* Calculate the width of each card, considering margins */
     margin-bottom: 40px; /* Add margin bottom for spacing */
 }
 
 .value-cards-container .value-card .face {
-    width: 300px;
+    width: 30vw;
     height: 200px;
     transition: .4s;
 }
@@ -249,6 +253,8 @@ ul.sub li a:hover {
     filter: invert(100%);
 }
 
+
+
 .value-cards-container .value-card .face.face-one .card-content h3 {
     font-size: 1em;
     color: #ffffff;
@@ -280,6 +286,12 @@ ul.sub li a:hover {
     margin: 0;
     padding: 0;
     color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .value-cards-container .value-card .face.face-two p, a {
+        font-size: 9pt;
+    }
 }
 
 .value-cards-container .value-card .face.face-two a {
@@ -381,8 +393,9 @@ a.button-link:hover {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     .footer-main{
-        height: 80%;
+        height: 30%;
+        color: #ffffff;
     }
 }
